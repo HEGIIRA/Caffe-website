@@ -1,0 +1,574 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,500&family=David+Libre:wght@400;500;700&family=Inter:wght@400;700&display=swap');
+ 
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+ }
+
+ :root {
+    --bg-color : #FFEECC;
+    --bg-color-secondary : #DFCCFB;
+    --text-color : #101A24;
+    --text-color-secondary :#5C6574;
+    --btn-purple : #BEADFA;
+    --text-color-tiga : #fff;
+    --font-judul : "David Libre", serif;
+    --font-isi : "inter" , sans-serif;
+
+ }
+
+ body {
+    background: var(--bg-color);
+ }
+
+ .header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 100px;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+ }
+
+ .logo {
+   margin-top: 8px;
+   width: 120px ;
+ }
+
+ .navbar {
+   margin-top: 32px;
+ }
+
+ .navbar a {
+   margin-right: 45px;
+   color: var(--text-color);
+   font-family: var(--font-isi);
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 29px;
+ }
+
+ .navbar a:hover {
+  color: var(--btn-purple);
+ }
+
+ .btn-purple {
+   margin-top: 15px;
+   background-color: var(--btn-purple);
+   color: #fff;
+   font-family: var(--font-judul);
+   font-size: 16px;
+   padding-top: 9px;
+   padding-bottom: 6px;
+   padding-left: 15px;
+   padding-right: 15px;
+   font-weight: 500;
+   line-height: 29px;
+   border-radius: 15px 0;
+ }
+
+ .btn-purple:hover {
+  /* color: var(--text-color); */
+  background-color: #9F91CC;
+ }
+
+ .hero {
+   display: flex;
+   padding: 30px 100px;
+ }
+
+ .hero .left {
+  margin-top: 270px;
+  margin-right: 150px;
+  margin-bottom: 150px;
+ }
+
+ .hero .left h1 {
+  color: var(--text-color);
+  font-family: var(--font-judul);
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 72px;
+ }
+
+ .hero .left p {
+  color: var(--text-color-secondary);
+  font-family: var(--font-isi);
+  margin-top: 69px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+ }
+
+ .btn-hero {
+  margin-top: 49px;
+  margin-bottom: 60px;
+ }
+
+ .btn-hero .book:hover {
+  background-color: #9F91CC;
+ }
+
+ .btn-hero .menu:hover {
+  background-color: #5C6574;
+ }
+
+ .menu {
+  color: #fff;
+  background-color: var(--text-color);
+  font-family: var(--font-judul);
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-right: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 29px;
+  border-radius: 15px 0;
+ }
+
+ .book {
+  color: #fff;
+  background-color: var(--btn-purple);
+  font-family: var(--font-judul);
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-right: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 29px;
+  border-radius: 15px 0;
+ }
+
+.social-media a {
+  display: inline-flex;
+  margin-right: 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  background: transparent;
+  border: 1.5px solid var(--text-color);
+  padding: 10px;
+  border-radius: 50%;
+  color: var(--text-color);
+}
+
+.social-media a:hover {
+  color: var(--btn-purple);
+}
+
+.right {
+  margin-top: 148px;
+  margin-bottom: 150px;
+}
+
+/* ini section ke dua */
+
+.dish {
+  padding: 30px 100px;
+  background: var(--bg-color-secondary);
+}
+
+.dish h1 {
+  text-align: center;
+  color:var(--text-color);
+  font-family: var(--font-judul);
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 65px;
+  margin-top: 60px;
+
+}
+
+.dish .keterangan {
+  margin-top: 21px;
+  color: var(--text-color-secondary);
+  text-align: center;
+  font-family: var(--font-isi);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; 
+}
+
+.dish-menu {
+  display: flex;
+  margin-top: 116px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.dish-menu .dish-card {
+  background: none;
+  border: 2px solid var(--text-color-tiga);
+  padding: 1.5rem 2rem 51px;
+  border-radius: 20px 0;
+  transition: .3s ease;
+  text-align: center;
+}
+
+.dish-menu .dish-card:hover {
+  background: var(--bg-color);
+  transform: scale(1.08);
+}
+
+.dish-menu .dish-card img {
+  margin-bottom: 15px;
+  width: 180px;
+  /* margin-left: 20px; */
+}
+
+.dish-menu h3 {
+  color: var(--text-color);
+  text-align: center;
+  font-family: var(--font-judul);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.dish-menu .dish-card p {
+  margin-top: 21px;
+  color:var(--text-color-secondary);
+  text-align: center;
+  font-family: var(--font-isi);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+/* welcome */
+
+.welcome {
+  padding: 30px 100px 100px;
+  background: var(--bg-color-secondary);
+  display: flex;
+}
+
+.welcome img {
+  margin-top: 130px;
+  width: 519px;
+  height: 476px;
+}
+
+.content {
+  margin-top: 200px;
+  margin-left: 37px;
+}
+
+.content h1 {
+  color: var(--text-color);
+  font-family: var(--font-judul);
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 65px;
+  margin-bottom: 20px;
+}
+
+.content p {
+  color: var(--text-color-secondary);
+  font-family: var(--font-isi);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+  margin-bottom: 15px;
+}
+
+.btn-content .menu:hover {
+  background-color: var(--text-color-secondary);
+}
+
+.btn-content .book:hover {
+  background-color: #9F91CC;
+}
+
+/* section chef */
+
+.chef {
+  display: flex;
+  padding: 100px 100px;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.chef img {
+  width: 650px;
+  border: var(--btn-purple);
+  border-radius: 50%;
+}
+
+.expects-chef {
+  margin-top: 100px;
+}
+
+.expects-chef h1 {
+  color: var(--text-color);
+  font-family: var(--font-judul);
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 65px;
+  margin-bottom: 18px;
+}
+
+.expects-chef .chef-des {
+  color:var(--text-color-secondary);
+  font-family: var(--font-isi);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+  margin-bottom: 25px;
+}
+
+.skills {
+  display: flex;  /*biar kepinggir */
+}
+
+.point {
+  display: flex;
+  margin-bottom: 33px;
+  margin-left: 10px;
+}
+
+.point img {
+  width: 23.802px;
+  height: 24px;
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+
+.point p {
+  color: var(--text-color-secondary);
+  font-family: var(--font-isi);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px; 
+}
+
+/* customer section */
+
+.customer {
+  padding: 50px 100px;
+  background: var(--bg-color-secondary);
+}
+
+.customer h1 {
+  justify-content: center;
+  text-align: center;
+  color: var(--text-color);
+  font-family: var(--font-judul);
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 65px;
+}
+
+.customer .cus-des {
+  margin-top: 18px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 376px;
+  color: var(--text-color-secondary);
+  text-align: center;
+  font-family:var(--font-isi);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; 
+}
+
+.customer .wrap-card {
+  display: flex;
+  margin-top: 50px;
+  gap: 100px;
+}
+
+.card-customer {
+  background: var(--bg-color);
+  text-align: center;
+  padding: 25px 30px;
+  border-radius: 80px 20px;
+}
+
+.card-customer .img-cus {
+  margin-bottom: 20px;
+}
+
+.coment {
+  margin-top: 10px;
+  color: var(--text-color-secondary);
+  text-align: center;
+  font-family: var(--font-isi);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+}
+
+.name-cus {
+  margin-top: 16px;
+  color:var(--text-color);
+  font-family: var(--font-isi);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 29px;
+}
+
+.jabatan {
+  color: var(--text-color-secondary);
+  text-align: center;
+  font-family: var(--font-isi);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+}
+
+/* footer */
+
+.footer {
+  padding: 100px 100px;
+}
+
+.atas {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.address img {
+  width: 200px;
+  margin-bottom: 21px;
+}
+
+.address .add {
+  color:var(--text-color-secondary);
+  font-family: var(--font-isi);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+  width: 408px;
+  height: 90px;
+}
+
+.open {
+  margin-top: 10px;
+  color: var(--text-color);
+  font-family: var(--font-isi);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; 
+  text-transform: uppercase;
+}
+
+.hours {
+  display: flex;
+}
+
+.day {
+  margin-right: 20px;
+  color:var(--text-color-secondary);
+  font-family: var(--font-isi);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; 
+}
+
+.navigation-footer {
+  display: flex;
+  flex-direction: column; /*biar tulisannya kebawah */
+}
+
+.title-footer {
+  color: var(--text-color);
+  font-family: var(--font-isi);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+
+.navigation-footer a {
+  color: var(--text-color-secondary);
+  font-family:var(--font-isi);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.dishes-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.dishes-footer a {
+  color: var(--text-color-secondary);
+  font-family:var(--font-isi);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.sosmed-footer a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 15px;
+  background: transparent;
+  border: 1px solid var(--text-color);
+  padding: 7px;
+  border-radius: 50%;
+  color: var(--text-color);
+}
+
+.bawah {
+  margin-top: 70px;
+  display: flex; /*biar kesamping */
+  justify-content: space-between;
+}
+
+.bawah p {
+  color:var(--text-color-secondary);
+  font-family: var(--font-isi);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+}
+
+.privacy {
+  display: flex;
+  gap: 20px;
+}
+
+
+
